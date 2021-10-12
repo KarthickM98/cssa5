@@ -1,0 +1,321 @@
+body{
+    background: chartreuse;
+    font-size: 40px;
+}
+a{ 
+    text-align: center;
+    text-decoration: none;
+    color: #FF0000;
+    border: 1px solid #FF865E;
+    background: #B2F9FC;
+    height: 50px;
+    width: fit-content;
+    border-radius: 20%;
+}
+.con{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.b1{
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    background: orchid;
+    border: 2px solid black;
+    animation: skx 2s ease-in infinite;
+}
+@keyframes skx {
+    30%{
+        transform: skewX(30deg);
+    }
+    40%{
+        transform: skewX(-30deg);
+    }
+}
+.b2{
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    background: #50D890;
+    border: 2px solid black;
+    animation: sky 2s ease-in infinite;
+}
+@keyframes sky {
+    30%{
+        transform: skewY(30deg);
+    }
+    40%{
+        transform: skewY(-30deg);
+    }
+}
+.b3{
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    background: #032D3C;
+    border: 2px solid black;
+    animation: rot 2s ease-in infinite;
+}
+@keyframes rot {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.b4{
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    background: #852747;
+    border: 2px solid black;
+    animation: scaley 2s ease-in infinite;
+}
+@keyframes scaley {
+    10%{
+        transform: scaleY(1);
+    }
+    90%{
+        transform: scaleY(1.5);
+    }
+}
+.b5{
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    background: #86340A;
+    border: 2px solid black;
+    animation: scalex 2s ease-in infinite;
+}
+@keyframes scalex {
+    10%{
+        transform: scaleX(1);
+    }
+    90%{
+        transform: scaleX(1.5);
+    }
+}
+.b6{
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    background: #7EB5A6;
+    border: 2px solid black;
+    animation: rot2 10s ease-in infinite alternate-reverse;
+}
+@keyframes rot2 {
+    50%{
+        transform: rotate(90deg);
+    }
+}
+
+/* Transition html */
+
+h1{text-align: center;}
+.c1{margin-left: 40%;} 
+.b7{
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    background: #7EB5A6;
+    border: 2px solid black;
+    transition: width 3s;
+}
+.b7:hover{
+    cursor: pointer;
+   width: 300px;
+}
+.b8{
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    background: #7EB5A6;
+    border: 2px solid black;
+    transition: width 3s, height 3s;
+}
+.b8:hover{
+   cursor: pointer;
+   height: 300px;
+   width: 300px;
+}
+.b9{
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    background: #7EB5A6;
+    border: 2px solid black;
+    transition: width 3s linear;
+}
+.b9:hover{
+    cursor: pointer;
+    width: 300px;
+}
+.b10{
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    background: #7EB5A6;
+    border: 2px solid black;
+    transition: width 3s ease; 
+}
+.b10:hover{
+    cursor: pointer;
+    width: 300px;
+}
+.b11{
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    background: #7EB5A6;
+    border: 2px solid black;
+    transition: width 3s ease-in;  
+}
+.b11:hover{
+    cursor: pointer;
+    width: 300px;
+}
+.b12{
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    background: #7EB5A6;
+    border: 2px solid black;
+    transition: width 3s ease-out;  
+}
+.b12:hover{
+   cursor: pointer;
+   width: 300px;
+}
+.b13{
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    background: #7EB5A6;
+    border: 2px solid black;
+    transition: width 3s ease-in-out;
+}
+.b13:hover{
+   cursor: pointer;
+   width: 300px;
+}
+.bk{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.nt{
+    position: absolute;
+    right: 20px; 
+    top: 20px;
+}
+
+/* animation of car */
+
+.body1{
+    background-image: url(./sky.jpeg); 
+    box-sizing: content-box;
+    border: 20px solid;
+    border-left-color: orange;
+    border-top-color:white;
+    border-right-color:green;
+    position:relative;
+    height: 690px;
+    width: 1438px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 1;
+}
+.bo1{
+    margin-top: 5px;
+    height: 50px;
+    width: fit-content;
+    margin-left: 30%;
+}
+.hdl{
+    background: orange;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 30px;
+}
+.hdm{
+    border: 1px solid black;
+    border-radius: 10px;
+    background: white;
+    margin: 30px;
+}
+.hdr{
+    border: 1px solid black;
+    border-radius: 10px;
+    background: green;
+    margin: 30px;
+}
+.city{
+    height: 200px;
+    width: 20%;
+    background-repeat: repeat;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 220px;
+    top: 250px;
+    /* display: inline-block; */
+    animation: city 5s linear infinite;
+}
+@keyframes city {
+    100%{transform: translate(-1400px)}
+}
+.road{
+    position: absolute;
+    bottom: -80px;
+    left: -20px;
+    height: 270px;
+    animation: roads 2s linear infinite;
+} 
+@keyframes roads {
+    100%{
+        transform: translate(-1400px);
+    }   
+}
+.car{
+    position: absolute;
+    bottom: 60px;
+    left: 40%;
+    z-index: 1;
+}
+.flag{
+    position: absolute;
+    left: 57%;
+    bottom: 127px;
+    z-index: 2;
+}
+.fweel{
+    position: absolute;
+    bottom: 57px;
+    left: 54.44%;
+    z-index: 1;
+    animation: fweel 1s linear infinite;
+}
+@keyframes fweel {
+    100%{ transform: rotate(360deg);}
+}
+.rweel{
+    position: absolute;
+    bottom: 57px;
+    left: 41.44%;
+    z-index: 1;
+    animation: rweel 1s linear infinite;
+}
+@keyframes rweel {
+    100%{ transform: rotate(360deg);}
+}
+.sun{
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    animation: sun 50s linear infinite;
+}
+@keyframes sun {
+    100%{ transform: translateX(-1400px);
+}    
+}
+
